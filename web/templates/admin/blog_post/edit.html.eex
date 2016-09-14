@@ -1,0 +1,6 @@
+    <h1><%= gettext("Edit blog post") %></h1>
+    <%= BlogPostForm.get_form(type: :update, action: :update, params: to_string(@id), changeset: @changeset) %>
+    <%= Brando.Villain.HTML.initialize(
+          base_url:     "/admin/blog/",
+          image_series: "blog-post",
+          source:     "textarea[name=\"blog_post[data]\"]") %>
