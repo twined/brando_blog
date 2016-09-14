@@ -30,13 +30,13 @@ Add to your `web/router.ex`:
     defmodule MyApp.Router do
       use MyApp.Web, :router
       # ...
-+     import Brando.News.Routes.Admin
++     import Brando.Blog.Routes.Admin
 
       scope "/admin", as: :admin do
         pipe_through :admin
         dashboard_routes   "/"
         user_routes        "/users"
-+       post_routes        "/news"
++       blog_routes        "/blog"
       end
     end
 ```
@@ -56,5 +56,5 @@ Add to your `lib/my_app.ex`:
         # worker(MyApp.Worker, [arg1, arg2, arg3]),
       ]
 
-+     Brando.Registry.register(Brando.News)
++     Brando.Registry.register(Brando.Blog)
 ```
