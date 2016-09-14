@@ -1,203 +1,221 @@
-## This file is a PO Template file. `msgid`s here are often extracted from
-## source code; add new translations manually only if they're dynamic
-## translations that can't be statically extracted. Run `mix
-## gettext.extract` to bring this file up to date. Leave `msgstr`s empty as
-## changing them here as no effect; edit them in PO (`.po`) files instead.
+# # `msgid`s in this file come from POT (.pot) files.
+# #
+# # Do not add, change, or remove `msgid`s manually here as
+# # they're tied to the ones in the corresponding POT file
+# # (with the same domain).
+# #
+# # Use `mix gettext.extract --merge` or `mix gettext.merge`
+# # to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: nb\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+
 #: lib/brando_blog/menus/blog_menu.ex:12
 msgid "Add new"
-msgstr ""
+msgstr "Legg til"
 
 #: web/templates/admin/blog_post/show.html.eex:6
 msgid "Back to index"
-msgstr ""
+msgstr "Tilbake til oversikten"
 
 #: web/controllers/admin/blog_post_controller.ex:137
 msgid "Confirm deletion"
-msgstr ""
+msgstr "Bekreft sletting"
 
 #: web/models/blog_post.ex:138
 msgid "Cover"
-msgstr ""
+msgstr "Omslag"
 
 #: web/models/blog_post.ex:144
 msgid "Creator"
-msgstr ""
+msgstr "Skaper"
 
 #: web/models/blog_post.ex:142
 msgid "Data"
-msgstr ""
+msgstr "Data"
 
 #: web/templates/admin/blog_post/index.html.eex:9
 msgid "Delete post"
-msgstr ""
+msgstr "Slett post"
 
 #: lib/brando_blog/forms/blog_post_form.ex:23
 msgid "Deleted"
-msgstr ""
+msgstr "Slettet"
 
 #: lib/brando_blog/forms/blog_post_form.ex:20
 msgid "Draft"
-msgstr ""
+msgstr "Kladd"
 
 #: web/controllers/admin/blog_post_controller.ex:102
 #: web/controllers/admin/blog_post_controller.ex:126
 msgid "Edit post"
-msgstr ""
+msgstr "Rediger post"
 
 #: web/templates/admin/blog_post/not_found.html.eex:1
 msgid "Entry not found"
-msgstr ""
+msgstr "Oppføring fantes ikke"
 
 #: web/controllers/admin/blog_post_controller.ex:88
 #: web/controllers/admin/blog_post_controller.ex:127
 msgid "Errors in form"
-msgstr ""
+msgstr "Feil i skjemaet"
 
 #: web/models/blog_post.ex:136
 msgid "Featured"
-msgstr ""
+msgstr "Fremhevet"
 
 #: web/models/blog_post.ex:143
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #: web/models/blog_post.ex:139
 msgid "Header"
-msgstr ""
+msgstr "Overskrift"
 
 #: lib/brando_blog/menus/blog_menu.ex:11
 msgid "Index"
-msgstr ""
+msgstr "Oversikt"
 
 #: web/templates/admin/blog_post/index.html.eex:1
 msgid "Index - posts"
-msgstr ""
+msgstr "Oversikt - poster"
 
 #: web/models/blog_post.ex:149
 msgid "Inserted at"
-msgstr ""
+msgstr "Lagt til"
 
 #: web/models/blog_post.ex:137
 msgid "Language"
-msgstr ""
+msgstr "Språk"
 
 #: web/models/blog_post.ex:141
 msgid "Lead"
-msgstr ""
+msgstr "Ingress"
 
 #: web/models/blog_post.ex:145
 msgid "META description"
-msgstr ""
+msgstr "META-beskrivelse"
 
 #: web/models/blog_post.ex:146
 msgid "META keywords"
-msgstr ""
+msgstr "META-nøkkelord"
 
 #: web/controllers/admin/blog_post_controller.ex:67
 #: web/controllers/admin/blog_post_controller.ex:85
 #: web/templates/admin/blog_post/new.html.eex:1
 msgid "New post"
-msgstr ""
+msgstr "Ny post"
 
 #: lib/brando_blog/forms/blog_post_form.ex:22
 msgid "Pending"
-msgstr ""
+msgstr "Venter"
 
 #: web/models/blog_post.ex:147
 msgid "Publish at"
-msgstr ""
+msgstr "Publiseringstidspunkt"
 
 #: lib/brando_blog/forms/blog_post_form.ex:21
 msgid "Published"
-msgstr ""
+msgstr "Publisert"
 
 #: web/templates/admin/blog_post/index.html.eex:28
 msgid "Re-render posts"
-msgstr ""
+msgstr "Gjengi poster på nytt"
 
 #: web/controllers/admin/blog_post_controller.ex:56
 msgid "Show post"
-msgstr ""
+msgstr "Vis post"
 
 #: web/models/blog_post.ex:140
 msgid "Slug"
-msgstr ""
+msgstr "URL-tamp"
 
 #: web/models/blog_post.ex:135
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: web/models/blog_post.ex:148
 msgid "Tags"
-msgstr ""
+msgstr "Merkelapper"
 
 #: lib/brando_blog/forms/blog_post_form.ex:11
 msgid "The post is prioritized, taking precedence over pub. date"
-msgstr ""
+msgstr "Denne posten er prioritert og vektes før publiseringsdatoer"
 
 #: web/templates/admin/blog_post/delete_confirm.html.eex:11
 msgid "This object cannot be restored!"
-msgstr ""
+msgstr "Dette objektet kan ikke gjenopprettes!"
 
 #: web/models/blog_post.ex:150
 msgid "Updated at"
-msgstr ""
+msgstr "Sist oppdatert"
 
 #: web/templates/admin/blog_post/delete_confirm.html.eex:6
 msgid "You are about to delete this object. Please check carefully, and note that any dependent objects will also be removed."
-msgstr ""
+msgstr "Du er ferd med å slette dette objektet. Kontroller nøye, og legg merke til at alle avhengige objekter også vil bli fjernet."
 
 #: lib/brando_blog/menus/blog_menu.ex:10
 msgid "Blog"
-msgstr ""
+msgstr "Blogg"
 
 #: web/controllers/admin/blog_post_controller.ex:81
 msgid "Blog post created"
-msgstr ""
+msgstr "Blogginnlegg opprettet"
 
 #: web/controllers/admin/blog_post_controller.ex:150
 msgid "Blog post deleted"
-msgstr ""
+msgstr "Innlegget ble slettet"
 
 #: web/controllers/admin/blog_post_controller.ex:118
 msgid "Blog post updated"
-msgstr ""
+msgstr "Post oppdatert"
 
 #: web/controllers/admin/blog_post_controller.ex:44
 msgid "Blog posts re-rendered"
-msgstr ""
+msgstr "Blogginnlegg re-rendret"
 
 #: web/templates/admin/blog_post/delete_confirm.html.eex:3
 msgid "Delete blog post"
-msgstr ""
+msgstr "Slett blogginnlegg"
 
 #: web/templates/admin/blog_post/edit.html.eex:1
 #: web/templates/admin/blog_post/index.html.eex:8
 #: web/templates/admin/blog_post/show.html.eex:9
 msgid "Edit blog post"
-msgstr ""
+msgstr "Rediger blogginnlegg"
 
 #: web/controllers/admin/blog_post_controller.ex:30
 msgid "Index - blog posts"
-msgstr ""
+msgstr "Oversikt - poster"
 
 #: web/templates/admin/blog_post/index.html.eex:18
 msgid "New blog post"
-msgstr ""
+msgstr "Nytt blogginnlegg"
 
 #: web/templates/admin/blog_post/index.html.eex:14
 msgid "No blog posts"
-msgstr ""
+msgstr "Ingen blogginnlegg"
 
 #: web/templates/admin/blog_post/index.html.eex:7
 #: web/templates/admin/blog_post/show.html.eex:2
 msgid "Show blog post"
-msgstr ""
+msgstr "Vis blogginnlegg"
 
 #: web/models/blog_post.ex:130
 msgid "blog post"
-msgstr ""
+msgstr "Blogg-innlegg"
 
 #: web/models/blog_post.ex:131
 msgid "blog posts"
 msgstr ""
+"Blogg-\n"
+"innlegg"
