@@ -12,7 +12,6 @@ defmodule Brando.BlogPost do
   use Brando.Field.ImageField
 
   alias Brando.Type.Status
-  alias Brando.User
   alias Brando.Tag
 
   import Brando.Blog.Gettext
@@ -28,7 +27,7 @@ defmodule Brando.BlogPost do
     villain
     field :cover, Brando.Type.Image
     field :status, Status
-    belongs_to :creator, User
+    belongs_to :creator, Brando.User
     field :meta_description, :string
     field :meta_keywords, :string
     field :featured, :boolean
