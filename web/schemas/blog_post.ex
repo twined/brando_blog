@@ -6,9 +6,9 @@ defmodule Brando.BlogPost do
 
   @type t :: %__MODULE__{}
 
-  use Brando.Web, :model
-  use Brando.Tag, :model
-  use Brando.Villain, :model
+  use Brando.Web, :schema
+  use Brando.Tag, :schema
+  use Brando.Villain, :schema
   use Brando.Field.ImageField
 
   alias Brando.Type.Status
@@ -24,7 +24,7 @@ defmodule Brando.BlogPost do
     field :header, :string
     field :slug, :string
     field :lead, :string
-    villain
+    villain()
     field :cover, Brando.Type.Image
     field :status, Status
     belongs_to :creator, Brando.User
@@ -32,8 +32,8 @@ defmodule Brando.BlogPost do
     field :meta_keywords, :string
     field :featured, :boolean
     field :publish_at, Ecto.DateTime
-    timestamps
-    tags
+    timestamps()
+    tags()
   end
 
   has_image_field :cover,
@@ -125,7 +125,7 @@ defmodule Brando.BlogPost do
   #
   # Meta
 
-  use Brando.Meta.Model, [
+  use Brando.Meta.Schema, [
     singular: gettext("blog post"),
     plural: gettext("blog posts"),
     repr: &("#{&1.header}"),

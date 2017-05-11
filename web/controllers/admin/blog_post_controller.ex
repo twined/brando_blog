@@ -4,13 +4,11 @@ defmodule Brando.Admin.BlogPostController do
   """
 
   use Brando.Web, :controller
-  use Brando.Villain, [:controller, [
-    image_model: Brando.Image,
-    series_model: Brando.ImageSeries]]
+  use Brando.Villain, :controller
 
   import Brando.Blog.Gettext
   import Brando.Utils, only: [helpers: 1]
-  import Brando.Utils.Model, only: [put_creator: 2]
+  import Brando.Utils.Schema, only: [put_creator: 2]
   import Brando.Plug.HTML
 
   alias Brando.BlogPost

@@ -9,7 +9,7 @@ defmodule BrandoBlog.Integration.TestRepo.Migrations.CreateBlogPosts do
       add :header,            :text
       add :slug,              :text
       add :lead,              :text
-      villain
+      villain()
       add :cover,             :text
       add :status,            :integer
       add :creator_id,        references(:users)
@@ -18,8 +18,8 @@ defmodule BrandoBlog.Integration.TestRepo.Migrations.CreateBlogPosts do
       add :css_classes,       :text
       add :featured,          :boolean
       add :publish_at,        :datetime
-      tags
-      timestamps
+      tags()
+      timestamps()
     end
     create index(:blog_posts, [:language])
     create index(:blog_posts, [:slug])

@@ -17,7 +17,7 @@ defmodule BrandoBlog.ModelCase do
   using do
     quote do
       alias BrandoBlog.Integration.TestRepo
-      import Ecto.Model
+      import Ecto.Schema
       import Ecto.Query, only: [from: 2]
       import BrandoBlog.ModelCase
     end
