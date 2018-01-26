@@ -17,7 +17,7 @@ defmodule Brando.BlogPost do
   import Brando.Blog.Gettext
 
   @required_fields ~w(status language featured header slug data creator_id)a
-  @optional_fields ~w(lead publish_at tags html)a
+  @optional_fields ~w(lead publish_at tags html meta_description meta_keywords)a
 
   schema "blog_posts" do
     field :language, :string

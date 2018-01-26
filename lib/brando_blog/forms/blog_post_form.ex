@@ -56,6 +56,10 @@ defmodule Brando.BlogPostForm do
     end
     field :lead, :textarea, [required: false]
     field :data, :textarea, [required: false]
+    fieldset do
+      field :meta_description, :text
+      field :meta_keywords, :text
+    end
     field :publish_at, :datetime, [default: &Brando.Utils.get_now/0]
     field :tags, :text, [tags: true, required: false]
     submit :save, [class: "btn btn-success"]
